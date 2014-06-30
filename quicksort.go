@@ -4,6 +4,7 @@ import (
 	"math/rand"
 )
 
+// An implementation of a basic quicksort algorithm
 func Quicksort(a []string) {
 	shuffle(a)
 
