@@ -4,10 +4,10 @@ import (
 	"testing"
 )
 
-func Test_Quicksort(t *testing.T) {
+func Test_SelectionSort(t *testing.T) {
 	a := []string{"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"}
 
-	Quicksort(a)
+	SelectionSort(a)
 
 	if !isSorted(a) {
 		t.Log("a is not sorted: ", a)

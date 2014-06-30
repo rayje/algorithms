@@ -53,12 +53,6 @@ func partition(a []string, lo int, hi int) int {
 	return j
 }
 
-func swap(a []string, i int, j int) {
-	tmp := a[i]
-	a[i] = a[j]
-	a[j] = tmp
-}
-
 func shuffle(a []string) {
 	var r int;
 	var tmp string;
