@@ -1,6 +1,8 @@
 algorithms
 ==========
 
+[![Build Status](https://travis-ci.org/rayje/algorithms.svg?branch=master)](https://travis-ci.org/rayje/algorithms)<br>
+
 
   Contents
 ------------
