@@ -8,17 +8,17 @@ import (
 func Quicksort(a []string) {
 	shuffle(a)
 
-	sortRange(a, 0, len(a) - 1)
+	sort(a, 0, len(a) - 1)
 }
 
-func sortRange(a []string, lo int, hi int) {
+func sort(a []string, lo int, hi int) {
 	if hi <= lo {
 		return
 	}
 
 	j := partition(a, lo, hi)
-	sortRange(a, lo, j - 1)
-	sortRange(a, j + 1, hi)
+	sort(a, lo, j - 1)
+	sort(a, j + 1, hi)
 }
 
 func partition(a []string, lo int, hi int) int {
