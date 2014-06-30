@@ -14,3 +14,14 @@ func Test_SelectionSort(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func Test_SelectionSort_Small(t *testing.T) {
+	a := []string{"A", "E", "X", "D"}
+
+	SelectionSort(a)
+
+	if !isSorted(a) {
+		t.Log("a is not sorted: ", a)
+		t.Fail()
+	}
+}
